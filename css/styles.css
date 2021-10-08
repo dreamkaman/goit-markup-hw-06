@@ -541,6 +541,7 @@ ul {
 .footer-text .container {
   display: flex;
   justify-content: center;
+  align-items: baseline; /*test*/
 }
 
 .container-left-side {
@@ -567,7 +568,7 @@ ul {
   color: var(--main-white);
 }
 
-.footer-text p {
+.address-text {
   margin-top: 0;
   margin-bottom: 9px;
 
@@ -861,6 +862,11 @@ ul {
   fill: var(--main-blue);
 }
 
+/* ================================Footer form markup================================ */
+/* .footer-form {
+  padding-top: 10px;
+} */
+
 .footer-form-text {
   font-weight: 700;
   font-size: 14px;
@@ -874,11 +880,10 @@ ul {
 .form-footer-input {
   width: 358px;
   height: 50px;
-
   padding-top: 16px;
   padding-right: 15px;
   padding-bottom: 16px;
-  padding-right: 15px;
+  padding-left: 15px;
 
   margin: 0;
 
@@ -886,10 +891,18 @@ ul {
 
   border: 1px solid var(--main-gray);
   background-color: transparent;
+
+  color: var(--main-white);
+}
+
+.form-footer-input:focus {
+  outline: none;
+  color: var(--main-white);
+  border: 1px solid var(--main-blue);
+  background-color: transparent;
 }
 
 .form-footer-input::placeholder {
-  padding-left: 16px;
 }
 
 .button-send-ico {
@@ -898,7 +911,7 @@ ul {
   height: 24px;
   margin-left: 10px;
 
-  background-color: url('../images/icon-send.svg');
+  background-image: url('../images/icon-send.svg');
   background-size: contain;
 }
 
@@ -930,14 +943,22 @@ ul {
 }
 
 .form-footer-button-send:hover,
-:focus {
+.form-footer-button-send:focus {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--hover-blue);
 }
 
-/* ====================Form markup=================== */
+.form-footer-input:focus:not(:placeholder-shown):invalid {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.form-footer-input:focus:not(:placeholder-shown):valid {
+  border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+/* ====================Modal form markup=================== */
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -975,12 +996,6 @@ ul {
   display: block;
   position: relative;
   margin-top: 4px;
-
-  /* flex-basis: auto; */
-
-  /* width: auto; */
-
-  /* background-color: tomato; */
 }
 
 .modal-form-input {
@@ -1052,41 +1067,12 @@ ul {
 }
 
 .modal-form-input:focus:not(:placeholder-shown):invalid {
-  border: 1px dashed red;
+  border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 .modal-form-input:focus:not(:placeholder-shown):valid {
-  border: 1px dashed green;
+  border: 1px solid rgba(0, 255, 0, 0.3);
 }
-
-/* .checbox-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  margin-top: 20px;
-  border: 1px solid blue;
-}
-.checkbox-pseudo {
-  display: block;
-  position: absolute;
-
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-  border-radius: 2px;
-
-  border: 1px solid red;
-}
-
-.modal-form-check-label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--main-gray);
- */
 
 .modal-form-check-link {
   color: var(--main-blue);
@@ -1128,6 +1114,7 @@ ul {
   position: relative;
   margin-top: 20px;
 }
+
 /* =============================================CUSTOM CHECKBOX========================================== */
 
 .modal-form-btn {
