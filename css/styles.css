@@ -958,7 +958,24 @@ ul {
 }
 
 .checbox-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
   margin-top: 20px;
+  border: 1px solid blue;
+}
+.checkbox-pseudo {
+  display: block;
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border-radius: 2px;
+
+  border: 1px solid red;
 }
 
 .modal-form-check-label {
