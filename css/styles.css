@@ -70,6 +70,7 @@ ul {
 
 .header-text .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -540,7 +541,7 @@ ul {
 
 .footer-text .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: baseline; /*test*/
 }
 
@@ -808,7 +809,7 @@ ul {
   pointer-events: auto;
 
   transition-property: opacity;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -868,6 +869,9 @@ ul {
 } */
 
 .footer-form-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1106,13 +1110,21 @@ ul {
   align-items: center;
 
   font-size: 14px;
-  line-height: 1.71;
+  /* line-height: 1.71; */
+  line-height: 1;
   color: var(--main-gray);
 }
 
 .checbox-wrapper {
   position: relative;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-form-check {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
 }
 
 /* =============================================CUSTOM CHECKBOX========================================== */
