@@ -57,6 +57,17 @@ ul {
   overflow: hidden;
 }
 
+.blue-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+
 /* --------------------------------settings for index.html -------------------------------------*/
 .header-text {
   border-bottom: #ececec solid 1px;
@@ -244,8 +255,8 @@ ul {
   cursor: pointer;
 }
 
-.hero button:hover,
-.hero button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--hover-blue);
 
   transition-property: background-color;
@@ -905,16 +916,6 @@ ul {
 .form-footer-input::placeholder {
 }
 
-.button-send-ico {
-  display: block;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-
-  background-image: url('../images/icon-send.svg');
-  background-size: contain;
-}
-
 .footer-form-wrapper {
   display: flex;
   justify-content: space-between;
@@ -940,6 +941,17 @@ ul {
 
   color: var(--main-white);
   background-color: var(--main-blue);
+}
+
+.form-footer-button-send::after {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-image: url('../images/icon-send.svg');
+  background-size: contain;
 }
 
 .form-footer-button-send:hover,
