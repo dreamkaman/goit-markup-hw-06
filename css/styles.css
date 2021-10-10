@@ -827,11 +827,7 @@ ul {
 
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 580px;
-  /* padding: 40px; */
 
-  width: 528px;
-  height: 581px;
   border-radius: 4px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -1150,6 +1146,8 @@ ul {
 
   color: var(--main-white);
   background-color: var(--main-blue);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-form-btn:hover,
