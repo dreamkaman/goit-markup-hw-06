@@ -570,10 +570,12 @@ ul {
 }
 
 .address-text {
+  font-style: normal;
+}
+
+.address-text-info {
   margin-top: 0;
   margin-bottom: 9px;
-
-  font-style: normal;
 }
 
 .footer-contacts a {
@@ -593,12 +595,16 @@ ul {
 }
 
 .footer-mail {
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .footer-social-links {
   /* padding-top: 16px; */
   width: calc((100% - 30px) / 2);
+}
+
+.footer-social-links-text {
+  margin-top: 0;
 }
 
 .footer-social-links p {
@@ -610,6 +616,7 @@ ul {
 
 .footer-social-links-list {
   display: flex;
+  margin-bottom: 20px;
 }
 .footer-social-link a {
   display: flex;
@@ -865,7 +872,7 @@ ul {
   padding-top: 10px;
 } */
 
-.footer-form-text {
+.container-right-side-text {
   margin-top: 0;
   margin-bottom: 20px;
 
